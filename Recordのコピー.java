@@ -6,10 +6,10 @@ public class Record {
 	private String name;
 	private int length;
 	private int ranking;
-	
+
 	public Record(String title, String name, int length, int ranking) {
-		
-		setIdNum();	
+
+		setIdNum();
 		this.title = title;
 		this.name = name;
 		this.length = length;
@@ -21,8 +21,8 @@ public class Record {
 	}
 
 	public void setIdNum() {
-		int randomNum = (int)((Math.random()*9901)+100);
-		this.idNum = randomNum;		
+		int randomNum = (int) ((Math.random() * 9901) + 100);
+		this.idNum = randomNum;
 	}
 
 	public String getTitle() {
@@ -57,5 +57,4 @@ public class Record {
 		this.ranking = ranking;
 	}
 
-	
 }
